@@ -67,6 +67,7 @@
     <instance objName="obj_puzzle_stall" x="419" y="188" name="inst_DA3273FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_villager_male_three" x="419" y="182" name="inst_A12FFDCD" locked="0" code="text = noone;&#xA;text[0] = &quot;Here I'll let you practice a puzzle.&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="608" y="128" name="inst_BA943D5B" locked="0" code="new_room = rm_test;&#xA;new_x = 64;&#xA;new_y = 64;&#xA;open = true;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="288" y="320" name="inst_C98CE22B" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_wood" x="192" y="128" w="32" h="32" xo="0" yo="0" id="10000001" name="inst_D10D3A05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

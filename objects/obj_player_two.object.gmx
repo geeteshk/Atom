@@ -34,7 +34,7 @@ event_inherited();
 image_speed = 0;
 
 // Instance variables
-state = scr_move_state;
+state = scr_move_state_two;
 player_speed = 2;
 x_axis = 0;
 y_axis = 0;
@@ -45,6 +45,8 @@ length = 0;
 health_points = 20;
 attacked = false;
 player_face = RIGHT;
+
+image_blend = c_red;
 </string>
           </argument>
         </arguments>
@@ -102,7 +104,7 @@ script_execute(state);
 
 if (obj_stats.health_points &lt;= 0) {
     with (obj_stats) {
-        instance_create(player_xstart, player_ystart, obj_player);
+        instance_create(player_xstart, player_ystart, obj_player_two);
         health_points = max_health_points;
         energy_points = max_energy_points;
         expr_points = 0;
@@ -268,8 +270,8 @@ with (obj_stats) {
             <kind>1</kind>
             <string>/// Restore move state
 
-if (state == scr_attack_state) {
-    state = scr_move_state;
+if (state == scr_attack_state_two) {
+    state = scr_move_state_two;
     attacked = false;
 }
 </string>
@@ -322,7 +324,10 @@ persistent = true;
             <kind>1</kind>
             <string>/// Draw player shadow
 
+// Draw shadow
 draw_sprite(spr_player_shadow, image_index, x, y);
+
+// Draw player
 draw_self();
 </string>
           </argument>

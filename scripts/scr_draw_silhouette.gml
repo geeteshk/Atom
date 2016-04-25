@@ -1,5 +1,7 @@
 /// scr_draw_silhouette()
 
+if (!shaders_are_supported() || !shader_is_compiled(shd_leave_gray)) exit;
+
 surface_set_target(surface);
 draw_clear(c_black);
 d3d_set_fog(true, c_white, 0, 1);

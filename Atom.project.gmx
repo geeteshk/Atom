@@ -83,6 +83,10 @@
     <background>background\bg_grass</background>
     <background>background\bg_grass_healed</background>
     <background>background\bg_wood</background>
+    <background>background\bg_floor</background>
+    <background>background\bg_shadowtiles</background>
+    <background>background\bg_wall</background>
+    <background>background\bg_walltiles</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -148,8 +152,8 @@
     <object>objects\obj_villager_male_two</object>
     <object>objects\obj_villager_male_three</object>
     <object>objects\obj_heal_stall</object>
-    <object>objects\obj_combat_stall</object>
     <object>objects\obj_puzzle_stall</object>
+    <object>objects\obj_combat_stall</object>
     <object>objects\obj_dummy</object>
     <object>objects\obj_generator</object>
     <object>objects\obj_help</object>
