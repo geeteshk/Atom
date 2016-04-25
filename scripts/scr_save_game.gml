@@ -26,4 +26,4 @@ var file = file_text_open_write(working_directory + "save.dat");
 file_text_write_string(file, save_string);
 file_text_close(file);
 
-show_debug_message("Game saved successfully.");
+show_message("Game saved successfully.");
